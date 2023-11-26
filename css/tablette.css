@@ -1,0 +1,36 @@
+@media only screen and (max-width: 992px) {
+  #section_heberg_aside {
+    margin: 0;
+    padding: 0;
+    flex-flow: column-reverse nowrap;
+    width: 100%;
+  }
+  #section_heberg {
+    background-color: transparent;
+    width: 100%;
+  }
+  #section_aside {
+    margin-bottom: 20px;
+    border-radius: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+  }
+  .img_cards_S_aside {
+    height: 180px;
+  }
+  #acti {
+    min-height: auto;
+    max-height: none;
+    flex-direction: row;
+  }
+  .margin_1,
+  .margin_2,
+  .margin_3,
+  .margin_4 {
+    height: 250px;
+  }
+  .link_acti {
+    width: 50%;
+  }
+}

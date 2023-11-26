@@ -1,0 +1,244 @@
+/*MEDIA SCREEN POUR TABLETTE ET MOBILE*/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /*Dimensions du body*/
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  #responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  html,
+  body,
+  #responsive,
+  header,
+  #contenaire,
+  #contenaire_section,
+  #section_acti,
+  #acti,
+  #ul_footer,
+  footer {
+    flex-flow: column nowrap;
+  }
+  /*HEADER*/
+  header,
+  #contenaire {
+    width: 100%;
+  }
+  #box_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #nav_links {
+    justify-content: center;
+    width: 100%;
+  }
+  #nav_links li {
+    width: 50%;
+  }
+  /*LINKS HEADER*/
+  #heberg_li,
+  #acti_li {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    border-top: 0;
+    font-size: 18px;
+    border-bottom: 2px solid #f2f2f2;
+  }
+  li a[href="#heberg"],
+  li a[href="#acti"] {
+    color: black;
+    text-decoration: none;
+  }
+  /*HOVER LINKS HEADER*/
+  li a[href="#heberg"]:hover,
+  li a[href="#acti"]:hover {
+    width: 100%;
+    min-width: 160px;
+    max-width: 384px;
+    border-top: transparent;
+    /* Une transition pour rendre ça fluide */
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  #heberg_li:hover,
+  #acti_li:hover {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-width: 160px;
+    color: blue;
+    border-color: blue;
+  }
+  #section_form {
+    align-items: center;
+  }
+  #present {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    vertical-align: top;
+    margin-top: -20px;
+  }
+  /*FORMULAIRES LOCALISATION*/
+  #contenaire_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #style_form,
+  #ul_info,
+  #present {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  #form_search {
+    width: 100%;
+    height: 68px;
+  }
+  #localisation{
+    min-width: 60px;
+  }
+  input[type="search"] {
+    width: 100%;
+    font-size: 20px;
+  }
+  input[type="submit"],
+  #rech {
+    display: none;
+    border: none;
+  }
+  #loupe_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    border: 4px solid blue;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 80px;
+  }
+  #localisation,
+  #txt,
+  #search,
+  input[type="search"],
+  #loupe_mobile {
+    height: 100%;
+  }
+  #loupe_mobile i {
+    color: white;
+    font-size: 18px;
+  }
+  #present {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  #ul_filtres {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  #filtres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .button_filtres {
+    margin-bottom: 3px;
+  }
+  #ul_info {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  #ul_info p {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    max-width: 79vw;
+    margin-right: 2vh;
+  }
+  /*SECTION HEBERGEMENTS*/
+  #div_articles_heberg {
+    flex-flow: column nowrap;
+  }
+  .img_l_cards_heberg {
+    display: none;
+  }
+  .article_cards {
+    /* display: none; */
+    width: 100%;
+  }
+  #div_h2 {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  /*ASIDE*/
+  .img_cards_L_aside,
+  .img_cards_M_aside {
+    display: none;
+  }
+  .img_cards_S_aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    padding: 4px 4px 4px 4px;
+    height: 155px;
+  }
+  .text_cards_aside {
+    margin-top: 6px;
+    margin-bottom: 9px;
+    margin-left: 7px;
+  }
+  /*Activités*/
+  #section_acti {
+    width: 100%;
+  }
+
+  #li_acti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .acti {
+    flex-wrap: nowrap;
+  }
+  .link_acti {
+    width: 100%;
+  }
+  /*FOOTER*/
+  .ul_footer {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+}
